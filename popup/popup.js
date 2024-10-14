@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
           const link = document.createElement('a');
           link.href = video.url;
           link.textContent = video.title;
-          link.target = '_blank'; // 새로운 탭에서 열리도록 설정
+          link.target = '_blank'; 
           link.addEventListener('click', (event) => {
-            event.preventDefault(); // 기본 동작 방지 (현재 탭 이동 방지)
-            chrome.tabs.create({ url: video.url, active: false }); // 새로운 탭에서 링크 열기, 새 탭을 활성화하지 않음
+            event.preventDefault(); 
+            chrome.tabs.create({ url: video.url, active: false }); 
           });
           listItem.appendChild(link);
           videoList.appendChild(listItem);
