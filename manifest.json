@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "postPoneYoutube",
     "version": "1.0",
-    "description": "Postpone YouTube videos to watch later with a memo-style UI.",
+    "description": "Postpone your youtube watch list.",
     "permissions": ["contextMenus", "storage", "tabs", "activeTab", "scripting"],
     "background": {
       "service_worker": "background.js"

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     chrome.storage.sync.get({ videos: [] }, (result) => {
         const videoList = document.getElementById('video-list');
-        videoList.innerHTML = ''; // 기존 리스트 초기화
+        videoList.innerHTML = ''; 
         const groupedVideos = result.videos.reduce((acc, video) => {
             if (!acc[video.date]) {
                 acc[video.date] = [];
@@ -26,6 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        console.log("Videos loaded:", result.videos); // 저장된 비디오 데이터 확인용 로그
+        console.log("Videos loaded:", result.videos); 
     });
 });
