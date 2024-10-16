@@ -8,4 +8,4 @@
 
 ![Version](https://img.shields.io/badge/version-0.1.0--beta.3-blue.svg?cacheSeconds=2592000)
 
-> UI enhanced
+> UI enhanced 
